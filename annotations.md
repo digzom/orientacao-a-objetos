@@ -76,3 +76,61 @@ Agrupar código, api da classe (métodos privados são mais flexíveis para muda
 **Coesão** -> As classes precisam ter apenas uma responsabilidade (princípio da responsabilidade única);
 
 **Acoplamento é ruim** -> O quanto uma classe "conhece" ou mesmo "depende" do seu entorno; o quanto aponta, faz referência ou uma nomes de métodos ou outras classes. Quanto mais acoplado, menos flexível a classe será; é bom que classes sejam mais genéricas do que específicas. "Program to an interface, not an implementation".
+
+## Linguagens Estáticas
+
+Java, C, Pascal, Scala.
+
+- É preciso declarar variáveis antes de usá-las:
+
+```java
+int variable;
+```
+
+- É preciso definir os tipos dos métodos e das variáveis;
+- É possível identificar erros em tempo de compilação;
+
+## Linguagens Dinâmicas
+
+Lisp, Lua, Python, Elixir, Javascript.
+
+- Não é preciso declarar as variáveis;
+- A variável não precisa de anotação de tipo;
+- A checagem de tipo só é feito em runtime;
+
+```python
+x = 32
+carro = Carro()
+```
+
+## Outras características de linguagens dinâmicas
+
+Enquanto linguagens estáticas geralmente são executadas utilizando um compilador, linguagens dinâmicas usam um interpretador.
+
+- Capacidade de executar trechos da linguagem em tempo de execuação;
+
+```python
+exec("print('hello')")
+```
+
+- Reflexão computacional
+  - Alterar estrutura do código em tempo de execução
+  - Consultar a estrutura em tempo de execução.
+- Gestão automática de memória
+  - Garbbage Collector
+
+## Coleções
+
+- Implementam o tipo Iterable
+  - Stack
+  - ArrayList
+  - List
+  - LinkedList
+- ArrayList -> se eu uso List.get(8), ele vai no sétimo elemento do array e pega; se eu ficar um get numa LinkedList, ele precisa percorrer os elementos (os apontadores) para achar o elemento que eu escolhi.
+- É possível criar uma classe própria e implementar um for (desde que a classe ou método implemente a interface Iterable) e chamar o método para uma estrutura de dados específica. Tipo Protocols.
+- 
+
+
+
+
+
